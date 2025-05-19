@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Adjusted Time Display",
+  "version": "1.0",
+  "description": "Displays adjusted playback time next to the original time on YouTube when speed is changed.",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
